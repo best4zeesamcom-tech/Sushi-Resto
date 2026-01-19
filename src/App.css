@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+:root {
+  --first-color: hsl(19, 64%, 54%);
+  --first-color-alt: hsl(19, 64%, 52%);
+  --title-color: hsl(19, 16%, 15%);
+  --text-color: hsl(19, 16%, 35%);
+  --body-color: hsl(19, 100%, 96%);
+  --title-font: "Lora", serif;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --font-medium: 500;
 }
-
-.App-logo {
-  height: 40vmin;
+.dark-theme {
+  --first-color: hsl(19, 64%, 58%);
+  --first-color-alt: hsl(19, 64%, 54%);
+  --title-color: hsl(19, 24%, 85%);
+  --text-color: hsl(19, 16%, 65%);
+  --body-color: hsl(19, 12%, 8%);
+}
+* {
+  box-sizing: border-box;padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background 0.5s;
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;color: inherit;
+}
+img {
+  max-width: 100%;height: auto;
+}
+.container {
+  max-width: 1024px;margin-inline: auto;
+}
+.grid {
+  display: grid;gap: 1.5rem;
+}
+.main {
+  overflow: hidden;
+}
+.header {
+  position: fixed;width: 100%;
+  background-color: var(--body-color);
+  top: 0;left: 0;
+  z-index: 100;
+}
+.nav {
+  height: 5rem;display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: flex;align-items: center;
+  gap: .5rem;font-weight: 600;
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  transition: color .3s;
+}
+.nav__logo img {
+  width: 26px;
+}
+.nav__logo:hover {
+  color: var(--first-color);
+}
+.nav__menu {
+  margin-left: 23rem;
+}
+.nav__list {
+  display: flex;gap: 3rem;
+}
+.nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: color .4s;
+}
+.nav__link:hover,
+.nav__link.active-link {
+  color: var(--first-color);
+}
+.nav__img-1,
+.nav__img-2 {
+  position: absolute;opacity: .2;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav__img-1 {
+  width: 100px;top: .75rem;
+  left: -2rem;transform: rotate(165deg);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav__img-2 {
+  width: 50px;right: -1rem;
+  bottom: 0;transform: rotate(-30deg);
+}
+.nav__buttons {
+  display: flex;align-items: center;
+  gap: 1rem;
+}
+.change-theme {
+  font-size: 1.25rem;color: var(--title-color);
+  cursor: pointer;background: none;
+  border: none;transition: color .3s;
+}
+.home {
+  position: relative;overflow: hidden;
+  padding-block: 4rem 1rem;
+}
+.home__container {
+  position: relative;display: grid;
+  grid-template-columns: 480px 500px;
+  gap: 1.5rem;padding: 7rem 0 3rem;
+}
+.home__img {
+  width: 600px;position: absolute;
+  top: 5rem;right: -2rem;
+}
+.home__data {
+  order: -1;
+}
+.home__title {
+  font-family: var(--title-font);
+  font-size: 4rem;margin-bottom: 1rem;
+}
+.home__title img {
+  width: 60px;
+}
+.home__title div {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;gap: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.home__description {
+  padding-right: 10rem;margin-bottom: 2.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home__leaf-1,
+.home__leaf-2 {
+  position: absolute;opacity: .2;
+  pointer-events: none;
+}
+.home__leaf-1 {
+  width: 150px;top: 5rem;
+  left: -1rem;transform: rotate(90deg);
+}
+.home__leaf-2 {
+  width: 180px;right: -4rem;
+  bottom: 1rem;transform: rotate(-15deg);
+}
+.button {
+  display: inline-flex;align-items: center;
+  gap: .5rem;background-color: var(--first-color);
+  padding: 1rem 1.5rem;border-radius: 4rem;
+  color: #fff;font-weight: var(--font-medium);
+  transition: background .3s;border: none;
+  cursor: pointer;font-family: inherit;
+}
+.button i {
+  font-size: 1.5rem;transition: transform .3s;
+}
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+.button:hover i {
+  transform: translateX(.25rem);
 }
