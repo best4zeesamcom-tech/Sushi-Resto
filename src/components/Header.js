@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">
+        <a href="/#home" className="nav__logo">
           <img src={logo} alt="Delicious sushi"/> Sushi
         </a>
         <div className="nav__menu">
@@ -37,8 +37,8 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <img src={leaf1}  className="nav__img-1" />
-          <img src={leaf2}  className="nav__img-2" />
+          <img src={leaf1} alt="Sushi Restaurant Logo" className="nav__img-1" />
+          <img src={leaf2} alt="Sushi Restaurant Logo" className="nav__img-2" />
         </div>
         <div className="nav__buttons">
           <button className="change-theme" id="theme-button" onClick={toggleTheme}>
