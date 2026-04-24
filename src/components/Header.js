@@ -29,7 +29,7 @@ const Header = () => {
       <nav className="nav container">
 
         {/* ✅ FIXED: added href */}
-        <a href="/#home" className="nav__logo">
+        <a href="#home" className="nav__logo">
           <img src={logo} alt="Sushi logo" /> Sushi
         </a>
 
