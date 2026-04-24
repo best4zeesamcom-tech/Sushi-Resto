@@ -25,7 +25,7 @@ const Header = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          <img src={logo}/> Sushi
+          <img src={logo} alt="Delicious sushi"/> Sushi
         </a>
         <div className="nav__menu">
           <ul className="nav__list">
