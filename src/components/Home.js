@@ -13,7 +13,7 @@ return (
           <h1 className="home__title">
             Enjoy Delicious
             <div>
-              <img src={homeSushiTitle}  />
+              <img src={homeSushiTitle} alt="Delicious sushi" />
               Sushi Food
             </div>
           </h1>
