@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="/#home" className="nav__logo">
+        <a  className="nav__logo">
           <img src={logo} alt="Delicious sushi"/> Sushi
         </a>
         <div className="nav__menu">
