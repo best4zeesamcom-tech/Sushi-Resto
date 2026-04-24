@@ -4,7 +4,6 @@ import leaf1 from '../img/leaf-branch-4.png';
 import leaf2 from '../img/leaf-branch-3.png';
 const Header = () => {
   const [darkTheme, setDarkTheme] = useState(false);
-  const [activeLink, setActiveLink] = useState('home');
  // Toggle theme function
   const toggleTheme = () => {
     const newDarkTheme = !darkTheme;
