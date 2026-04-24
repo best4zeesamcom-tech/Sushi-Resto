@@ -25,8 +25,8 @@ return (
           </a>
         </div>
       </div>
-      <img src={leaf1} className="home__leaf-1" />
-      <img src={leaf2} className="home__leaf-2" />
+      <img src={leaf1} alt="Delicious sushi" className="home__leaf-1" />
+      <img src={leaf2} alt="Delicious sushi" className="home__leaf-2" />
     </section>
   );
 };
