@@ -20,7 +20,7 @@ return (
           <p className="home__description">
             Enjoy a good dinner with the best dishes in the restaurant and improve your day.
           </p>
-          <a href="#" className="button">
+          <a href="/#home" className="button">
             Order Now <i className="ri-arrow-right-line"></i>
           </a>
         </div>
