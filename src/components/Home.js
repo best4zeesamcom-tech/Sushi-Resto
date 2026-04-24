@@ -8,7 +8,7 @@ const Home = () => {
 return (
     <section className="home" id="home">
       <div className="home__container container grid">
-        <img src={homeSushi} className="home__img" />
+        <img src={homeSushi} alt="Restaurant logo" className="home__img" />
         <div className="home__data">
           <h1 className="home__title">
             Enjoy Delicious
