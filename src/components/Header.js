@@ -31,7 +31,7 @@ const Header = () => {
             {navItems.map(item => (
               <li key={item.id} className="nav__item">
                 <a href={`/#${item.id}`} 
-                  className={`nav__link ${activeLink === item.id ? 'active-link' : ''}`}>
+                  className={`nav__link`}>
                   {item.label}
                 </a>
               </li>
