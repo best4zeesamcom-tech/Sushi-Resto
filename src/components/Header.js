@@ -37,7 +37,7 @@ const Header = () => {
           <ul className="nav__list">
             {navItems.map(item => (
               <li key={item.id} className="nav__item">
-                <a href={`/#${item.id}`} className="nav__link">
+                <a href={`#${item.id}`} className="nav__link">
                   {item.label}
                 </a>
               </li>
